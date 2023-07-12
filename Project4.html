@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Button & Animation</title>
+    <style>
+        .flex1
+        {
+
+            display:inline;
+        }
+    #sidebar
+     {
+        background-color: rgb(108, 60, 60);
+        height: 70%;
+        width: 25%;
+        left: -30%;
+        padding: 10px;
+      display: flex;
+        position: absolute;
+        z-index: 2;
+     }
+     .logo p
+     {
+        margin-left: 1100px;
+        margin-top: 0;
+        font-size: large;
+        color: rgb(130, 100, 80);
+     }
+     .logo font
+     {
+    margin-left: 1050px;
+    display:flex ;
+    margin-top: 10px;
+    font-weight: bolder;
+font-size: 30px;
+color:rgb(215, 220, 211);
+background-color: brown;
+font-family: monospace;
+padding-left: 15px;
+font-weight: bolder;
+padding-right: 15px;
+border-radius: 5px;
+     }
+
+     #sidebar li
+     {
+        list-style: none;
+        font-size: larger;
+        color: white;
+        padding: 30px;
+       left: -30%;
+        border-bottom: 1px solid grey;
+        text-align: center;
+      
+     }
+     #sidebar a
+     {
+text-decoration: none;
+color: white;
+     }
+     a:hover
+     {
+        background-color:rgb(80, 102, 147);
+
+     }
+     .list
+     {
+        position: absolute;
+        left: 115%;
+        margin-top: 5px;
+     }
+.list span
+{
+display: block;
+background-color: black;
+height: 3px;
+width: 20px;
+margin: 3px;
+}
+#sidebar.active
+{
+    left: 0;
+}
+.animation
+{
+    overflow: hidden;
+    width: 100%;
+    height: 430px;
+    position: relative;
+    padding-top: 10px;
+    z-index: 1;
+}
+.animation img{
+    width: 100%;
+    padding-top: 10px;
+    height: 650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.animation img.active
+{
+    opacity: 1;
+}
+button 
+{
+    background-color: rgb(79, 80, 82);
+   text-align: right;
+    border: 0.2px;
+    margin-left: 1050px;
+    font-style: normal;
+    padding: 5px;
+}
+    </style>
+</head>
+<body><div class="flex1">
+    <div id="sidebar" onclick="togglebtn()">
+        <div class="list">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <ul>
+                <li><a href="Project4.html">Home</a></li>
+                    <li><a href="about">About Us</a></li>
+                        <li><a href="registration">Registration</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+            </ul>
+            
+    </div>
+    <div class="logo"> <font>HOPEFORALL</font><p>A Future For All</p></div>
+    <div class="animation">
+        <img src="assests/puresouls.jpg" >
+        <img src="assests/childrens.jpg" >
+        <img src="assests/happy.jpg">
+        </div>
+    <p style="text-align: center; font-size: 30px; color:rgb(11, 36, 61) ; font-weight: bolder;">
+       
+        "Together for a Future Filled with Possibilities."</p>
+    <p style="text-align: center; font-size: larger; color: darkslategray;">An Organisation for all the kids out there who wants to study but can't. 
+        So now they all have us amd the oppurtunity to learn.
+        Come! Let's join our hands together and help
+        all the kids out there who needs it because there will be always the right to learn.
+        "Right to Learn" is a concept that emphasizes the fundamental right of every individual to access education
+         and acquire knowledge. It recognizes education as a basic human right, essential for personal development,
+          empowerment, and social progress. The right to learn encompasses the belief that everyone, regardless of their
+           background, gender, race, or socioeconomic status, should have equal opportunities to pursue education.
+
+
+    </p>
+    <button class="btn btn-success"><a href="Project2.html" style="color: antiquewhite;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: right;">Next Project</a> </button>
+    <hr width="90%" color="darkslategray">
+
+    <script type="text/javascript">
+        function togglebtn()
+        {
+            document.getElementById("sidebar").classList.toggle('active');
+        }
+        let images = document.querySelectorAll('.animation img');
+        let currentImagevalue = 0;
+
+        function changeimg()
+        {
+            images.forEach(function(img)
+            {
+                img.classList.remove('active');
+            });
+        images[currentImagevalue].classList.add('active');
+    currentImagevalue++;
+    if(currentImagevalue>=images.length){
+        currentImagevalue = 0;
+    }
+    setTimeout(changeimg, 3000);
+        }
+        changeimg();
+        
+    </script>
+</body>
+</html>

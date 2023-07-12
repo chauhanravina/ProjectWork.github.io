@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Animation</title>
+    <style>
+        body{
+            font-style: arial;
+          
+            background-image: url(assests/horror.jpg);
+            background-repeat: no-repeat;
+            background-size: 1300px 650px;
+            color: rgb(69, 72, 72);
+            margin-top: 230px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+
+        }
+        h1{
+            position: relative;
+            font-size: 60px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            width: 100%;
+            text-align: center;
+            -webkit-box-reflect: below 1px linear-gradient(transparent, black ) ;
+            line-height: 0.70em;
+outline: none;
+animation: animate 5s linear infinite;
+        }
+        @keyframes animate {
+            0%,18%,20%,50.1%,60%,65.1%,80%,90%,92.1%
+            {
+            color: rgb(175, 169, 169);
+            text-shadow: none;
+        }
+        18.1%,20.1%,50%,60.1%,65%,80.1%,90.1%,92%,100%
+        {
+color: rgb(41, 39, 39);
+text-shadow: 0 0 10px rgb(224, 77, 77),
+             0 0 20px rgb(224, 77, 77),
+    0 0 40px rgb(224, 77, 77), 
+   0 0 80px rgb(224, 77, 77), 
+   0 0 160px rgb(224, 77, 77);
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1 contenteditable="texttransform"> Don't Breathe</h1>
+</body>
+</html>

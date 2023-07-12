@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  Parallax Page</title>
+   <style>
+    body{
+        margin: 0px;
+    }
+    .parallax
+    {
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        perspective: 10px;
+    }
+    header{
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index: -1;
+    }
+    .background
+    {
+        transform: translateZ(-10px)scale(2);
+    }
+    .foreground{
+        transform: translateZ(-5px)scale(1.5);
+    }
+    .background,.foreground 
+    {
+        position: absolute;
+        height: 99.9%;
+        width: 100vw;
+        z-index: -1;
+        object-fit: cover;
+    }
+    h1{
+    text-shadow: 0 0 10px rgb(213, 192, 192);
+    color: brown;
+    font-size: 50px;
+    padding-bottom: 350px;
+    font-weight: bolder;
+}
+section{
+    background-color: rgb(206, 213, 213);
+    color: rgb(32, 29, 29);
+    font-size: 20px;
+    padding: 30px;;
+    text-align: left;
+}
+.container1
+{
+    color: black;
+     background-color:rgb(246, 235, 235); 
+     padding: 10px; 
+     margin: 10px; 
+     border-radius: 10px; 
+         font-size: 20px;
+}
+.contain1{
+    background-color: 
+    rgb(206, 213, 213);
+    padding: 10px;
+}
+.contain2
+{
+    background-color: rgb(206, 213, 213);
+     padding: 10px;
+}
+button 
+{
+    background-color: rgb(79, 80, 82);
+   text-align: right;
+    border: 0.2px;
+    margin-left: 1050px;
+    font-style: normal;
+    padding: 5px;
+}
+a{
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+}
+   </style>
+
+</head>
+<body>
+    <div class="parallax">
+        <header>
+            <img src="imgs/idk2.jpg" class="background">
+            <img src="imgs/equality1.png" class="foreground">
+            <h1>JUSTICE UNITES<br><font style="font-size: 25px; color: cadetblue;">Justice cannot be for one side alone, but must be for both.</font></h1>
+        </header>
+<br>
+    <section>
+        <br>Gender equality, also known as sexual equality or equality of the sexes, is the state of equal ease of access to resources and opportunities
+         regardless of gender, including economic participation and decision-making; and the state of valuing different behaviors, aspirations and needs equally, 
+         regardless of gender.<br>
+
+        Gender equality is the goal, while gender neutrality and gender equity are practices and ways of thinking that help in achieving the goal. Gender parity, 
+        which is used to measure gender balance in a given situation, can aid in achieving gender equality but is not the goal in and of itself. Gender equality is 
+        more than just equal representation, it is strongly tied to women's rights, and often requires policy changes. As of 2017, the global movement[which?] 
+        for gender equality has not incorporated the proposition of genders besides women and men, or gender identities outside of the gender binary.
+        <br>Gender equality 
+        is a fundamental principle that advocates for fairness and equal opportunities for individuals of 
+        all genders. Despite significant strides towards achieving gender equality, disparities persist in various aspects 
+        of society. This essay delves into the importance of gender equality, explores its benefits for individuals and society,
+         and highlights the ongoing challenges and necessary steps to achieve true equality.
+<br><br>
+<div class="container1">
+    <div class="contain1">
+     <font style="font-size: 30px; margin-left: 500px;">Body</font>
+        <br><br>
+        Equal rights and opportunities:
+        Gender equality ensures that all individuals, regardless of their gender, have the same rights and opportunities in all
+         areas of life. It eliminates discriminatory practices and creates a level playing field for everyone. By granting equal
+          access to education, employment, healthcare, and political participation, society benefits from the collective talents,
+           skills, and contributions of all its members.
+           <br><br>
+        Economic empowerment:
+        Promoting gender equality is essential for economic growth and development. When women have access to education and 
+        economic opportunities, they become active participants in the workforce, contributing to innovation, productivity, and 
+        economic stability. Closing the gender wage gap and providing equal opportunities for career advancement not only 
+        benefits women but also fosters economic prosperity and reduces poverty rates.
+        <br>
+       
+        Addressing violence and discrimination:
+        Gender equality plays a crucial role in combating gender-based violence and discrimination. By promoting respect, consent,
+         and gender-sensitive policies, societies can create safe environments for all individuals. Efforts to eradicate 
+         gender-based violence, including domestic violence, sexual harassment, and human trafficking, are vital for ensuring the 
+         well-being and dignity of every person.
+         <br>
+        Building inclusive and representative leadership:
+        Achieving gender equality involves empowering women to take on leadership roles and participate in decision-making 
+        processes. When women are represented in political, economic, and social spheres, diverse perspectives are brought to
+         the table, leading to better policies and outcomes. Gender-balanced leadership fosters inclusive governance, fosters s
+         ocial cohesion, and addresses the needs and concerns of all members of society.</div>
+         <br>
+         <div class="contain2">
+            <font style="font-size: 30px; margin-left: 500px;;">
+        Conclusion</font>
+        <br><br>
+        Gender equality is not only a matter of justice and fairness, but it is also a catalyst for social progress and 
+        development. It ensures that all individuals have equal rights, opportunities, and protections, regardless of their
+         gender. By embracing gender equality, we create a more inclusive and prosperous society, where everyone can thrive and
+          contribute their full potential. It is crucial to continue raising awareness, challenging biases, and advocating for
+           policies and practices that promote gender equality. Only by working together can we build a future where gender is 
+           no longer a barrier to success and fulfillment for anyone.</div></div>  
+             <button><a href="Project4.html">Next Project</a> </button></section>    </div>
+</body>
+</html>
